@@ -71,9 +71,9 @@ html[dir=rtl] .lang-sw{margin-left:0}
       <option data-i18n="opt_auto">Automatisation — 59 DT/mois</option>
       <option data-i18n="opt_pack">Pack 3 automatisations — 129 DT/mois</option>
       <option data-i18n="opt_agent">Agent IA sur-mesure — 1 200 DT + 199 DT/mois</option>
-      <option data-i18n="opt_vit">Site vitrine — 700 DT</option>
-      <option data-i18n="opt_pro">Site pro / santé — 1 400 DT</option>
-      <option data-i18n="opt_bout">Boutique en ligne — 2 500 DT</option>
+      <option data-i18n="opt_vit">Site vitrine — 1 000 DT</option>
+      <option data-i18n="opt_pro">Site pro / santé — 1 900 DT</option>
+      <option data-i18n="opt_bout">Boutique en ligne — 3 400 DT</option>
       <option data-i18n="opt_fiche">Fiche Google — Gratuite (audit offert)</option>
       <option data-i18n="opt_reels">Reels — dès 200 DT</option>
       <option data-i18n="opt_plus">Plusieurs services</option>
@@ -103,9 +103,9 @@ var CONTACT_EMAIL = "solos@agentmail.to";
   var sel = document.getElementById('svc');
   var msg = document.getElementById('msg');
   var map = {
-    'vitrine':  ['Site vitrine — 700 DT', 'Modèle souhaité : Vitrine — 700 DT (offre de lancement, au lieu de 1 200 DT). '],
-    'pro':      ['Site pro / santé — 1 400 DT', 'Modèle souhaité : Site Pro / Santé — 1 400 DT (offre de lancement, au lieu de 2 500 DT). '],
-    'boutique': ['Boutique en ligne — 2 500 DT', 'Modèle souhaité : Boutique en ligne — 2 500 DT (offre de lancement, au lieu de 4 000 DT). ']
+    'vitrine':  ['Site vitrine — 1 000 DT', 'Modèle souhaité : Vitrine — 1 000 DT (offre de lancement, au lieu de 1 800 DT). '],
+    'pro':      ['Site pro / santé — 1 900 DT', 'Modèle souhaité : Site Pro / Santé — 1 900 DT (offre de lancement, au lieu de 3 000 DT). '],
+    'boutique': ['Boutique en ligne — 3 400 DT', 'Modèle souhaité : Boutique en ligne — 3 400 DT (offre de lancement, au lieu de 5 000 DT). ']
   };
   var wfmap = {
     'rdv-sante':   ['Automatisation — 59 DT/mois', 'Automatisation souhaitée : Rendez-vous Santé (dentiste/médecin) — bienvenue + rappel J-1 + confirmation + avis Google. 59 DT/mois (offre de lancement, au lieu de 79 DT). '],
@@ -167,7 +167,7 @@ function showOk(){
     l_name:"Nom complet *",ph_name:"Votre nom",l_biz:"Nom du commerce / entreprise",ph_biz:"Nom de votre commerce",l_phone:"Téléphone",ph_phone:"+216 ...",l_email:"Email (on vous répond sur cette adresse) *",ph_email:"vous@exemple.com",
     l_svc:"Service souhaité *",opt_empty:"— Choisir un service —",
     opt_auto:"Automatisation — 59 DT/mois",opt_pack:"Pack 3 automatisations — 129 DT/mois",opt_agent:"Agent IA sur-mesure — 1 200 DT + 199 DT/mois",
-    opt_vit:"Site vitrine — 700 DT",opt_pro:"Site pro / santé — 1 400 DT",opt_bout:"Boutique en ligne — 2 500 DT",opt_fiche:"Fiche Google — Gratuite (audit offert)",opt_reels:"Reels — dès 200 DT",opt_plus:"Plusieurs services",
+    opt_vit:"Site vitrine — 1 000 DT",opt_pro:"Site pro / santé — 1 900 DT",opt_bout:"Boutique en ligne — 3 400 DT",opt_fiche:"Fiche Google — Gratuite (audit offert)",opt_reels:"Reels — dès 200 DT",opt_plus:"Plusieurs services",
     l_msg:"Votre besoin",ph_msg:"Décrivez votre besoin...",btn_send:"Envoyer ma demande",ok_msg:"Demande envoyée ! On vous répond par email très vite.",
     ex_vit:"Exemple : vitrine",ex_sante:"Exemple : santé",ex_bout:"Exemple : boutique",
     foot:"Solos · Automatisation &amp; Intelligence artificielle · solos-tn.github.io/solos"
@@ -177,7 +177,7 @@ function showOk(){
     l_name:"Full name *",ph_name:"Your name",l_biz:"Business / company name",ph_biz:"Your business name",l_phone:"Phone",ph_phone:"+216 ...",l_email:"Email (we reply to this address) *",ph_email:"you@example.com",
     l_svc:"Service wanted *",opt_empty:"— Choose a service —",
     opt_auto:"Automation — 59 DT/month",opt_pack:"3-automation pack — 129 DT/month",opt_agent:"Custom AI Agent — 1 200 DT + 199 DT/month",
-    opt_vit:"Showcase website — 700 DT",opt_pro:"Pro / health website — 1 400 DT",opt_bout:"Online shop — 2 500 DT",opt_fiche:"Google Profile — Free (free audit)",opt_reels:"Reels — from 200 DT",opt_plus:"Several services",
+    opt_vit:"Showcase website — 1 000 DT",opt_pro:"Pro / health website — 1 900 DT",opt_bout:"Online shop — 3 400 DT",opt_fiche:"Google Profile — Free (free audit)",opt_reels:"Reels — from 200 DT",opt_plus:"Several services",
     l_msg:"Your need",ph_msg:"Describe your need...",btn_send:"Send my request",ok_msg:"Request sent! We'll reply by email very soon.",
     ex_vit:"Example: showcase",ex_sante:"Example: health",ex_bout:"Example: shop",
     foot:"Solos · Automation &amp; Artificial Intelligence · solos-tn.github.io/solos"
@@ -187,7 +187,7 @@ function showOk(){
     l_name:"الاسم الكامل *",ph_name:"اسمك",l_biz:"اسم المتجر / المؤسسة",ph_biz:"اسم متجرك",l_phone:"الهاتف",ph_phone:"+216 ...",l_email:"البريد الإلكتروني (نرد عليه) *",ph_email:"you@example.com",
     l_svc:"الخدمة المطلوبة *",opt_empty:"— اختر خدمة —",
     opt_auto:"أتمتة — 59 دينار/شهر",opt_pack:"باقة 3 أتمتة — 129 دينار/شهر",opt_agent:"وكيل IA حسب الطلب — 1200 د.ت + 199 د.ت/شهر",
-    opt_vit:"موقع واجهة — 700 د.ت",opt_pro:"موقع احترافي/صحي — 1400 د.ت",opt_bout:"متجر إلكتروني — 2500 د.ت",opt_fiche:"ملف Google — مجاني (تدقيق مجاني)",opt_reels:"ريلز — من 200 د.ت",opt_plus:"عدة خدمات",
+    opt_vit:"موقع واجهة — 1000 د.ت",opt_pro:"موقع احترافي/صحي — 1900 د.ت",opt_bout:"متجر إلكتروني — 3400 د.ت",opt_fiche:"ملف Google — مجاني (تدقيق مجاني)",opt_reels:"ريلز — من 200 د.ت",opt_plus:"عدة خدمات",
     l_msg:"احتياجك",ph_msg:"صف احتياجك...",btn_send:"أرسل طلبي",ok_msg:"تم إرسال الطلب! سنرد عليك بالبريد قريباً جداً.",
     ex_vit:"مثال: واجهة",ex_sante:"مثال: صحة",ex_bout:"مثال: متجر",
     foot:"سولوس · الأتمتة والذكاء الاصطناعي · solos-tn.github.io/solos"
